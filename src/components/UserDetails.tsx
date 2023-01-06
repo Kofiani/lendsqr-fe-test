@@ -21,12 +21,13 @@ const UserDetails = ({ data }: propData) => {
 			<div className='section'>
 				<div className='profile-header'>
 					<div className='avatar'>
-						{/* <Profile styles={{ width: '40px' }} /> */}
 						<img src={data.profile.avatar} alt='avatar' />
 					</div>
 					<div className='name'>
-						<h1>Grace Effiom</h1>
-						<span>gigitatafa</span>
+						<h1>
+							{data.profile.firstName} {data.profile.lastName}
+						</h1>
+						<span>{data.id}</span>
 					</div>
 					<div className='tier'>
 						<h4>User Tier</h4>
@@ -37,8 +38,8 @@ const UserDetails = ({ data }: propData) => {
 						</div>
 					</div>
 					<div className='amount'>
-						<h1>&#8358;200,0000</h1>
-						<h6>Zenith Bank Plc</h6>
+						<h1>&#8358;{data.accountBalance}</h1>
+						<h6>{data.accountNumber}</h6>
 					</div>
 				</div>
 				<div className='tabs'>
