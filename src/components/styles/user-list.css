@@ -129,9 +129,120 @@
   .user-list .content .body-section .table .thead .icon span {
     margin-right: 8px;
   }
+  .user-list .content .body-section .table .tbody .filter-container {
+    position: relative;
+  }
+  .user-list .content .body-section .table .tbody .filter-container .filter {
+    background-color: white;
+    position: absolute;
+    padding: 1em;
+    padding-bottom: 0em !important;
+    border: 1px solid rgba(84, 95, 125, 0.14);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+  }
+  .user-list .content .body-section .table .tbody .filter-container .filter form {
+    padding: 1em 0.5em;
+  }
+  .user-list .content .body-section .table .tbody .filter-container .filter form .field {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5em;
+    width: 210px;
+  }
+  .user-list .content .body-section .table .tbody .filter-container .filter form .field label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0.4em 0;
+  }
+  .user-list .content .body-section .table .tbody .filter-container .filter form .field select {
+    outline: none;
+    height: 40px;
+    border: 1px solid rgba(33, 64, 125, 0.3882352941);
+    border-radius: 8px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Work sans", sans-serif;
+    line-height: 16px;
+    opacity: 0.5;
+    padding: 0 0.5em;
+  }
+  .user-list .content .body-section .table .tbody .filter-container .filter form .field input {
+    border: 1px solid rgba(33, 64, 125, 0.3882352941);
+    border-radius: 8px;
+  }
+  .user-list .content .body-section .table .tbody .filter-container .filter form .field input::-moz-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.7;
+    padding: 0.5em;
+  }
+  .user-list .content .body-section .table .tbody .filter-container .filter form .field input:-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.7;
+    padding: 0.5em;
+  }
+  .user-list .content .body-section .table .tbody .filter-container .filter form .field input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.7;
+    padding: 0.5em;
+  }
+  .user-list .content .body-section .table .tbody .filter-container .filter form .field input[type=text] {
+    outline: none;
+    height: 35px;
+  }
+  .user-list .content .body-section .table .tbody .filter-container .filter form .field input[type=date] {
+    outline: none;
+    height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Work sans", sans-serif;
+    line-height: 16px;
+    opacity: 0.5;
+    padding: 0 0.8em;
+  }
+  .user-list .content .body-section .table .tbody .filter-container .filter form .btns {
+    padding: 0.5em 0;
+    display: flex;
+    gap: 1.5em;
+  }
+  .user-list .content .body-section .table .tbody .filter-container .filter form .btns .reset {
+    border: 1px solid rgba(84, 95, 125, 0.14);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+  }
+  .user-list .content .body-section .table .tbody .filter-container .filter form .btns .apply {
+    background: #39cdcc !important;
+    border: 1px solid #39cdcc;
+    border-radius: 4px;
+    color: white;
+  }
+  .user-list .content .body-section .table .tbody .filter-container .filter form .btns button {
+    outline: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: transparent;
+    padding: 0.7em 1.7em;
+  }
   .user-list .content .body-section .table .tbody .top-row {
     display: grid;
     grid-template-columns: auto auto;
+  }
+  .user-list .content .body-section .table .tbody .top-row .status {
+    background-color: rgba(84, 95, 125, 0.0705882353);
+    border-radius: 30px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0.5em 2em;
   }
   .user-list .content .body-section .table .tbody .top-row button {
     background-color: transparent;

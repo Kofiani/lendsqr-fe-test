@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap");
+@media (min-width: 641px) {
+  .layout {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  .layout .images {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+  }
+  .layout .login-form {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+    height: 100vh;
+    width: 50%;
+    justify-content: center;
+    padding: 0 6em;
+  }
+  .layout .login-form .title {
+    margin-bottom: 20px;
+  }
+  .layout .login-form .title h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    color: #213f7d;
+  }
+  .layout .login-form .title p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .layout .login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .layout .login-form form div {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  .layout .login-form form div input {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #545f7d;
+  }
+  .layout .login-form form div p {
+    position: absolute;
+    right: 4%;
+    top: 40%;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #39cdcc;
+  }
+  .layout .login-form form input {
+    background: #ffffff;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+    padding: 1.2em;
+    color: #545f7d;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .layout .login-form form input::-moz-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .layout .login-form form input:-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .layout .login-form form input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .layout .login-form form h5 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #39cdcc;
+  }
+  .layout .login-form form button {
+    background-color: #39cdcc;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 1em 0;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=login.css.map */

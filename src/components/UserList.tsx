@@ -22,6 +22,7 @@ const UserList = () => {
 	const [singleUserDetails, setSingleUserDetails] = useState<dataProps | null>(
 		null,
 	);
+	const [filter, setFilter] = useState<boolean>(false);
 	const url =
 		'https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users ';
 
@@ -119,7 +120,12 @@ const UserList = () => {
 					<div className='table'>
 						{data && (
 							<div className='thead'>
-								<div className='icon'>
+								<div
+									className='icon'
+									onClick={() => {
+										setFilter(!filter);
+									}}
+								>
 									<span>organisation </span>
 									<Filter />
 								</div>
@@ -146,6 +152,47 @@ const UserList = () => {
 							</div>
 						)}
 						<div className='tbody'>
+							{filter && (
+								<div className='filter-container'>
+									<div className='filter'>
+										<form>
+											<div className='field'>
+												<label> Organisation</label>
+												<select className='select'>
+													<option>Select</option>
+												</select>
+											</div>
+											<div className='field'>
+												<label>Username</label>
+												<input type='text' placeholder='Username' />
+											</div>
+											<div className='field'>
+												<label>Email</label>
+												<input type='text' placeholder='Email' />
+											</div>
+											<div className='field'>
+												<label>Date</label>
+												<input type='date' />
+											</div>
+											<div className='field'>
+												<label>Phone Number</label>
+												<input type='text' />
+											</div>
+
+											<div className='field'>
+												<label>Status</label>
+												<select className='select'>
+													<option>Select</option>
+												</select>
+											</div>
+											<div className='btns'>
+												<button className='reset'>Reset</button>
+												<button className='apply'>Filter</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							)}
 							{data &&
 								data.map((item: dataProps) => (
 									<div className='top-row' key={item.id}>
@@ -158,7 +205,7 @@ const UserList = () => {
 											<div>{item.email}</div>
 											<div>{item.phoneNumber}</div>
 											<div>{dateFormater(item.createdAt)}</div>
-											<div>status</div>
+											<div className='status'>Inactive</div>
 										</div>
 										<button className='icon' onClick={() => console.log(item)}>
 											<MenuDot />

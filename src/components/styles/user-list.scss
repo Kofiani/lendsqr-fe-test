@@ -133,9 +133,105 @@
 						}
 					}
 					.tbody {
+						.filter-container {
+							position: relative;
+							.filter {
+								background-color: white;
+								position: absolute;
+								padding: 1em;
+								padding-bottom: 0em !important;
+								border: 1px solid rgba(84, 95, 125, 0.14);
+								box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+								border-radius: 4px;
+								form {
+									padding: 1em 0.5em;
+									.field {
+										display: flex;
+										flex-direction: column;
+										padding-bottom: 0.5em;
+										width: 210px;
+										label {
+											font-weight: 500;
+											font-size: 14px;
+											line-height: 16px;
+											padding: 0.4em 0;
+										}
+										select {
+											outline: none;
+											height: 40px;
+											border: 1px solid #21407d63;
+											border-radius: 8px;
+											background-color: transparent;
+											font-weight: 400;
+											font-size: 14px;
+											font-family: 'Work sans', sans-serif;
+											line-height: 16px;
+											opacity: 0.5;
+											padding: 0 0.5em;
+										}
+										input {
+											border: 1px solid #21407d63;
+											border-radius: 8px;
+											&::placeholder {
+												font-weight: 400;
+												font-size: 14px;
+												line-height: 16px;
+												opacity: 0.7;
+												padding: 0.5em;
+											}
+										}
+										input[type='text'] {
+											outline: none;
+											height: 35px;
+										}
+										input[type='date'] {
+											outline: none;
+											height: 40px;
+											font-weight: 400;
+											font-size: 14px;
+											font-family: 'Work sans', sans-serif;
+											line-height: 16px;
+											opacity: 0.5;
+											padding: 0 0.8em;
+										}
+									}
+									.btns {
+										padding: 0.5em 0;
+										display: flex;
+										gap: 1.5em;
+										.reset {
+											border: 1px solid rgba(84, 95, 125, 0.14);
+											box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+											border-radius: 4px;
+										}
+
+										.apply {
+											background: #39cdcc !important;
+											border: 1px solid #39cdcc;
+											border-radius: 4px;
+											color: white;
+										}
+										button {
+											outline: none;
+											font-weight: 600;
+											font-size: 14px;
+											line-height: 16px;
+											background-color: transparent;
+											padding: 0.7em 1.7em;
+										}
+									}
+								}
+							}
+						}
 						.top-row {
 							display: grid;
 							grid-template-columns: auto auto;
+							.status {
+								background-color: #545f7d12;
+								border-radius: 30px;
+								width: max-content;
+								padding: 0.5em 2em;
+							}
 							button {
 								background-color: transparent;
 								outline: none;
