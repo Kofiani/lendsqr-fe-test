@@ -8,8 +8,8 @@ const Login = ({ handleIsLoggedIn }: loggedInProps) => {
 	return (
 		<div className='layout'>
 			<div className='images'>
-				<img src='../../public/logo.svg' width='139' height='40' alt='image' />
-				<img src='../../public/pablo.svg' alt='image' />
+				<img src='../../logo.svg' width='139' height='40' alt='image' />
+				<img src='../../pablo.svg' alt='image' />
 			</div>
 			<div className='login-form'>
 				<div className='title'>
