@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap");
+.dashboard {
+  position: relative;
+}
+.dashboard .dash-board {
+  display: flex;
+  position: absolute;
+  z-index: -9999;
+  background-color: #e5e5e5;
+}/*# sourceMappingURL=dashboard.css.map */

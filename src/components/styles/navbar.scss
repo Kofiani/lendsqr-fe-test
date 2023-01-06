@@ -1,0 +1,68 @@
+@use '../../css/base';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+// medium
+@media (min-width: base.$md) {
+	.nav {
+		display: flex;
+		background-color: white;
+		box-shadow: base.$top-nav-shadow;
+		max-width: 100%;
+		align-items: center;
+		justify-content: space-between;
+		height: 95px;
+		.logo {
+			padding: 1.5em;
+		}
+
+		.search-bar {
+			display: flex;
+			input[type='text'] {
+				height: 40px;
+				width: 400px;
+				border-bottom-left-radius: 8px;
+				border-top-left-radius: 8px;
+				border: 1px solid #213f7d;
+				opacity: 0.2;
+				outline: none;
+				padding-left: 0.4rem;
+				font-size: 14px;
+			}
+			input::placeholder {
+				padding: 0.6rem;
+				opacity: 0.7;
+				color: base.$secondary-color;
+				font-size: 14px;
+			}
+			button {
+				background-color: base.$primary-color;
+				height: 44px;
+				width: 56px;
+				outline: none;
+				border: none;
+				border-bottom-right-radius: 8px;
+				border-top-right-radius: 8px;
+				margin: 0 auto;
+			}
+		}
+
+		.left {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 2em;
+			margin: 0.4em;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 400;
+			.profile {
+				display: flex;
+				font-family: 'Work sans', sans-serif;
+				font-weight: 500;
+				justify-content: space-between;
+				align-items: center;
+				margin: 0.4em;
+				width: 200px;
+				padding: 2em;
+			}
+		}
+	}
+}

@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap");
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100%;
+}
+
+@media (min-width: 641px) {
+  .sidebar .version {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 20px;
+    padding-left: 1em;
+    padding-bottom: 1em;
+  }
+  .sidebar .logout {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 1em;
+    padding-top: 1em;
+  }
+  .sidebar .logout h6 {
+    margin: 10px;
+  }
+  .sidebar .link-list {
+    border-bottom: 1px solid rgba(33, 63, 125, 0.1);
+  }
+  .sidebar .link-list .container-link:last-child {
+    margin-bottom: 50px;
+  }
+  .sidebar .link-list .opacity {
+    opacity: 0.6;
+  }
+  .sidebar .link-list .active {
+    background-color: rgba(57, 205, 205, 0.1137254902);
+    border-left: 2px solid #39cdcc;
+    opacity: 1 !important;
+  }
+  .sidebar .link-list .dashboard-link {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 1em;
+  }
+  .sidebar .link-list .dashboard-link h6 {
+    margin: 20px;
+  }
+  .sidebar .link-list .container-link {
+    margin-top: 20px;
+  }
+  .sidebar .link-list .container-link .title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 1em;
+    padding-bottom: 1em;
+  }
+  .sidebar .link-list .container-link .content {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 1em;
+    opacity: 0.6;
+  }
+  .sidebar .link-list .container-link .content h6 {
+    margin: 12px;
+  }
+  .sidebar .link-list .switch {
+    display: grid;
+    grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content;
+    grid-template-columns: max-content max-content max-content;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 1em;
+    padding-right: 1.5em;
+    padding-top: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .sidebar .link-list .switch h6 {
+    margin: 10px;
+  }
+}/*# sourceMappingURL=sidebar.css.map */

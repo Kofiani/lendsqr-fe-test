@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap");
+@media (min-width: 641px) {
+  .start {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1em;
+  }
+  .start .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .start .head h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .start .head .btns {
+    display: flex;
+    gap: 15px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .start .head .btns .danger {
+    border: 2px solid #e4033b;
+    color: #e4033b;
+    border-radius: 8px;
+    height: 10px;
+    padding-top: 0.6em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    width: 120px;
+    text-align: center;
+  }
+  .start .head .btns .success {
+    border: 2px solid #39cdcc;
+    color: #39cdcc;
+    border-radius: 8px;
+    height: 10px;
+    padding-top: 0.6em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    width: 120px;
+    text-align: center;
+  }
+  .start .section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: white;
+    margin-bottom: 10px;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+  }
+  .start .section .profile-header {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+  }
+  .start .section .profile-header .avatar {
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+  }
+  .start .section .profile-header .name {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #545f7d;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+  }
+  .start .section .profile-header .name h1 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .start .section .profile-header .name span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .start .section .profile-header .tier {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 1em;
+    border-right: 1px solid #545f7d;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    gap: 5px;
+  }
+  .start .section .amount {
+    padding: 0.5em 1em;
+  }
+  .start .section .amount h1 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .start .section .amount h6 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .start .section .tabs {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .start .section .tabs div {
+    width: 130px;
+    text-align: center;
+    padding: 0.8em;
+  }
+  .start .section .tabs .active {
+    border-bottom: 1px solid #39cdcc;
+  }
+  .start .user-information {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 10px;
+    padding: 0 1.5em;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+  }
+  .start .user-information .info {
+    border-bottom: 1px solid rgba(33, 64, 125, 0.1294117647);
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+  }
+  .start .user-information .info .body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    row-gap: 25px;
+    word-break: break-all;
+  }
+  .start .user-information .info .body .details h6 {
+    padding-bottom: 0.5em;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+  .start .user-information .info .body .details h2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .start .user-information .info .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 25px;
+  }
+}/*# sourceMappingURL=user-details.css.map */

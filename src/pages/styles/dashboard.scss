@@ -1,0 +1,14 @@
+@use '../../css/base';
+
+.dashboard {
+	position: relative;
+	.dash-board {
+		display: flex;
+		position: absolute;
+		z-index: -9999;
+		background-color: base.$grey;
+	}
+}
+
+@media (min-width: base.$md) {
+}

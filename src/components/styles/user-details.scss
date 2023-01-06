@@ -1,0 +1,173 @@
+@use '../../css/base';
+
+@media (min-width: base.$md) {
+	.start {
+		// outline: 1px solid red;
+		display: flex;
+		flex-direction: column;
+		padding: 2em 1em;
+		.head {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 25px;
+			h3 {
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 28px;
+			}
+			.btns {
+				display: flex;
+				gap: 15px;
+				background-color: transparent;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 16px;
+				.danger {
+					border: 2px solid #e4033b;
+					color: #e4033b;
+					border-radius: 8px;
+					height: 10px;
+					padding-top: 0.6em;
+					padding-left: 1em;
+					padding-bottom: 1em;
+					padding-right: 1em;
+					width: 120px;
+					text-align: center;
+				}
+				.success {
+					border: 2px solid base.$primary-color;
+					color: base.$primary-color;
+					border-radius: 8px;
+					height: 10px;
+					padding-top: 0.6em;
+					padding-left: 1em;
+					padding-bottom: 1em;
+					padding-right: 1em;
+					width: 120px;
+					text-align: center;
+				}
+			}
+		}
+		.section {
+			display: flex;
+			flex-direction: column;
+			padding-top: 1em;
+			padding-left: 1em;
+			padding-right: 1em;
+			background-color: white;
+			margin-bottom: 10px;
+			box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+			border-radius: 4px;
+			.profile-header {
+				display: flex;
+				align-items: center;
+				padding: 1em;
+				.avatar {
+					border-radius: 50%;
+					background-color: base.$grey;
+					display: flex;
+					justify-content: center;
+					height: 80px;
+					width: 80px;
+				}
+				.name {
+					display: flex;
+					flex-direction: column;
+					border-right: 1px solid #545f7d;
+					padding-top: 0.5em;
+					padding-left: 1em;
+					padding-right: 1em;
+					padding-bottom: 0.5em;
+					h1 {
+						font-weight: 500;
+						font-size: 22px;
+						line-height: 26px;
+					}
+					span {
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 16px;
+					}
+				}
+				.tier {
+					display: flex;
+					flex-direction: column;
+					padding: 0.5em 1em;
+					border-right: 1px solid #545f7d;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 16px;
+					gap: 5px;
+				}
+			}
+			.amount {
+				padding: 0.5em 1em;
+				h1 {
+					font-weight: 500;
+					font-size: 22px;
+					line-height: 26px;
+				}
+				h6 {
+					font-weight: 400;
+					font-size: 12px;
+					line-height: 14px;
+				}
+			}
+			.tabs {
+				display: flex;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 19px;
+				div {
+					width: 130px;
+					text-align: center;
+					padding: 0.8em;
+				}
+				.active {
+					border-bottom: 1px solid base.$primary-color;
+				}
+			}
+		}
+		.user-information {
+			display: flex;
+			flex-direction: column;
+			background-color: white;
+			margin-top: 10px;
+			padding: 0 1.5em;
+			box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+			border-radius: 4px;
+			.info {
+				border-bottom: 1px solid #21407d21;
+				padding-bottom: 1.5em;
+				padding-top: 1.5em;
+				.body {
+					display: grid;
+					grid-template-columns: repeat(5, 1fr);
+					column-gap: 5px;
+					row-gap: 25px;
+					word-break: break-all;
+					.details {
+						h6 {
+							padding-bottom: 0.5em;
+							font-weight: 400;
+							font-size: 11px;
+							line-height: 14px;
+							text-transform: uppercase;
+						}
+						h2 {
+							font-weight: 500;
+							font-size: 16px;
+							line-height: 19px;
+						}
+					}
+				}
+				.title {
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 19px;
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+}

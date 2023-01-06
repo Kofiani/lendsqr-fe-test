@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap');
+$sm: 640px;
+$md: 641px;
+$lg: 1007px;
+$brand-font: 'Work sans', sans-serif;
+$primary-color: #39cdcc;
+$secondary-color: #545f7d;
+$red: #e4033b;
+$violet: #df18ff;
+$blue: #5718ff;
+$orange: #f55f44;
+$pink: #ff3366;
+$yellow: #e9b200;
+$grey: #e5e5e5;
+$login-shadow: 0px 15px 90px 0px #00000008;
+$top-nav-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+$sidebar-shadow: 0px 5px 20px 0px #0000000a;
+$dahboard-shadow: 3px 5px 20px 0px #0000000a;
+$pagination: #213f7d1a;
+$box-border: 1px solid #213f7d0f;
+$gradient: linear-gradient(
+		0deg,
+		rgba(33, 63, 125, 0.06),
+		rgba(33, 63, 125, 0.06)
+	),
+	linear-gradient(0deg, #ffffff, #ffffff);
+$gradient2: linear-gradient(
+		0deg,
+		rgba(84, 95, 125, 0.14),
+		rgba(84, 95, 125, 0.14)
+	),
+	linear-gradient(0deg, #ffffff, #ffffff);
