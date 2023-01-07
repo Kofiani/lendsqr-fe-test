@@ -48,6 +48,14 @@ type stylesProp = {
 		width?: string;
 	};
 };
+
+export const Deactivate = ({ styles }: stylesProp) => {
+	return <img src={deactivate} style={styles} alt='profile-icon' />;
+};
+
+export const Visible = ({ styles }: stylesProp) => {
+	return <img src={visible} style={styles} alt='profile-icon' />;
+};
 export const Profile = ({ styles }: stylesProp) => {
 	return <img src={profile} style={styles} alt='profile-icon' />;
 };
@@ -182,8 +190,8 @@ export const EclipseFile = ({ styles }: stylesProp) => {
 	return <img src={eclipseFile} style={styles} alt='dropdown-icon' />;
 };
 
-export const MenuDot = () => {
-	return <img src={menu} alt='dropdown-icon' />;
+export const MenuDot = ({ styles }: stylesProp) => {
+	return <img src={menu} style={styles} alt='dropdown-icon' />;
 };
 
 export const ActivateUser = () => {

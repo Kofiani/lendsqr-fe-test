@@ -228,10 +228,43 @@
 							display: grid;
 							grid-template-columns: auto auto;
 							.status {
-								background-color: #545f7d12;
-								border-radius: 30px;
 								width: max-content;
-								padding: 0.5em 2em;
+								padding: 0.5em 2.5em;
+								display: flex;
+								gap: 10px;
+								position: relative;
+								.info {
+									background-color: #545f7d12;
+									padding: 0.5em 2em;
+									border-radius: 30px;
+								}
+								.pop-up {
+									position: absolute;
+									top: -30px;
+									background-color: transparent;
+									right: 5px;
+									z-index: 9999999;
+									.popUp {
+										display: flex;
+										flex-direction: column;
+										background-color: white;
+										border: 1px solid rgba(84, 95, 125, 0.04);
+										box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+										border-radius: 4px;
+										.options {
+											align-items: center;
+											width: 150px;
+											padding: 1em;
+											div {
+												padding: 0.7em 1.3em;
+												display: flex;
+												p {
+													padding-left: 0.3em;
+												}
+											}
+										}
+									}
+								}
 							}
 							button {
 								background-color: transparent;

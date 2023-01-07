@@ -5,13 +5,16 @@ import updateState from '../utils/updateState';
 import getSingleUserDetails from '../utils/getSingleUserDetails';
 import UserDetails from './UserDetails';
 import {
+	ActivateUser,
 	BackArrow,
+	Deactivate,
 	EclipseCoins,
 	EclipseFile,
 	EclipseUser,
 	EclipseUserGroup,
 	Filter,
 	MenuDot,
+	Visible,
 } from './Icons';
 
 const UserList = () => {
@@ -23,8 +26,18 @@ const UserList = () => {
 		null,
 	);
 	const [filter, setFilter] = useState<boolean>(false);
+	const [showPopUp, setShowPopUp] = useState<boolean>(false);
+	const [getId, setGetId] = useState<string>('');
 	const url =
 		'https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users ';
+
+	const handleShowPopUp = (id: string) => {
+		console.log(id);
+		if (data?.find((item) => item.id === id)) {
+			setShowPopUp(!showPopUp);
+			setGetId(id);
+		}
+	};
 
 	const handleShowSingleUser = (item: dataProps) => {
 		setShowSingleUser(true);
@@ -221,22 +234,58 @@ const UserList = () => {
 							{data &&
 								data.map((item: dataProps) => (
 									<div className='top-row' key={item.id}>
-										<div
-											className='row'
-											onClick={() => handleShowSingleUser(item)}
-										>
-											<div>{item.orgName}</div>
-											<div>{item.userName}</div>
-											<div>{item.email}</div>
-											<div>{item.phoneNumber}</div>
-											<div>{dateFormater(item.createdAt)}</div>
-											<div className='status'>Inactive</div>
-										</div>
-										<button className='icon' onClick={() => console.log(item)}>
-											<div className='pop-up'>
-												<MenuDot />
+										<div className='row'>
+											<div onClick={() => handleShowSingleUser(item)}>
+												{item.orgName}
 											</div>
-										</button>
+											<div onClick={() => handleShowSingleUser(item)}>
+												{item.userName}
+											</div>
+											<div onClick={() => handleShowSingleUser(item)}>
+												{item.email}
+											</div>
+											<div onClick={() => handleShowSingleUser(item)}>
+												{item.phoneNumber}
+											</div>
+											<div onClick={() => handleShowSingleUser(item)}>
+												{dateFormater(item.createdAt)}
+											</div>
+											<div
+												className='status'
+												onClick={() => handleShowPopUp(item.id)}
+											>
+												<p className='info'>Inactive</p>
+												<MenuDot styles={{ width: '4px' }} />
+
+												{showPopUp && (
+													<div className='pop-up'>
+														{getId === item.id ? (
+															<div className='popUp'>
+																<div className='options'>
+																	<div>
+																		<Visible />
+																		<p> View Details</p>
+																	</div>
+																	<div>
+																		<Deactivate />
+																		<p>Blacklist User</p>
+																	</div>
+																	<div>
+																		<ActivateUser />
+																		<p>Activate User</p>
+																	</div>
+																</div>
+															</div>
+														) : (
+															<></>
+														)}
+													</div>
+												)}
+											</div>
+										</div>
+										{/* <button className='icon' onClick={() => console.log(item)}>
+											<MenuDot styles={{ width: '4px' }} />
+										</button> */}
 									</div>
 								))}
 						</div>

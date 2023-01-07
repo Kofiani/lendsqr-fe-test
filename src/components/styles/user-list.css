@@ -238,12 +238,45 @@
     grid-template-columns: auto auto;
   }
   .user-list .content .body-section .table .tbody .top-row .status {
-    background-color: rgba(84, 95, 125, 0.0705882353);
-    border-radius: 30px;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+    padding: 0.5em 2.5em;
+    display: flex;
+    gap: 10px;
+    position: relative;
+  }
+  .user-list .content .body-section .table .tbody .top-row .status .info {
+    background-color: rgba(84, 95, 125, 0.0705882353);
     padding: 0.5em 2em;
+    border-radius: 30px;
+  }
+  .user-list .content .body-section .table .tbody .top-row .status .pop-up {
+    position: absolute;
+    top: -30px;
+    background-color: transparent;
+    right: 5px;
+    z-index: 9999999;
+  }
+  .user-list .content .body-section .table .tbody .top-row .status .pop-up .popUp {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid rgba(84, 95, 125, 0.04);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+  }
+  .user-list .content .body-section .table .tbody .top-row .status .pop-up .popUp .options {
+    align-items: center;
+    width: 150px;
+    padding: 1em;
+  }
+  .user-list .content .body-section .table .tbody .top-row .status .pop-up .popUp .options div {
+    padding: 0.7em 1.3em;
+    display: flex;
+  }
+  .user-list .content .body-section .table .tbody .top-row .status .pop-up .popUp .options div p {
+    padding-left: 0.3em;
   }
   .user-list .content .body-section .table .tbody .top-row button {
     background-color: transparent;
