@@ -17,6 +17,11 @@ function App() {
 		setIsLoggedIn(!isLoggedIn);
 	};
 
+	const showAnyWays = () => {
+		setShowPage(true);
+		setShowMaintenance(false);
+	};
+
 	useEffect(() => {
 		const handleWindowResize = () => {
 			setWindowWidth(window.innerWidth);
@@ -54,6 +59,12 @@ function App() {
 						{windowWidth}px, <br />
 						try viewing this page with a wider screen {'>'} 1000px. <br />
 						We're conciously working to bring you the best experience.
+					</p>
+					<p
+						onClick={showAnyWays}
+						style={{ textDecoration: 'underline', color: 'blue' }}
+					>
+						click here to continue anyways
 					</p>
 				</div>
 			)}
