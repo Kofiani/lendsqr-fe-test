@@ -2,14 +2,15 @@
 
 This project is my submission for the frontend engineer test required for my application for the of a frontend engineer at Lendqr.
 
-The tech stack of this project is React & Typescript and SCSS. No extra dependencies was used in the development process.
+The tech stack of this project is React & Typescript and SCSS.
+No extra dependencies was used in the development process.
 
-## Higlights of my implementation strategy:
+## Higlights of My Implementation Strategy:
 
-- created 2 pages: Login and Dashboard.
-- implemented useState hook to toggle views : Users list and Single User details.
-- created icon component : easy to import and use custom icons.
-- implemented a screen width notice and view restriction for better user experience: project is not fully optimized for smaller screens, due to submission deadline.
+- Created 2 pages: Login and Dashboard.
+- Implemented useState hook to toggle views : Users list and Single User details.
+- Created icon component : easy to import and use custom icons.
+- Implemented a screen width notice and view restriction for better user experience: project is not fully optimized for smaller screens, due to submission deadline.
 
 ## Still in development:
 
