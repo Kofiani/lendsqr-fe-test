@@ -129,23 +129,48 @@ const UserList = () => {
 									<span>organisation </span>
 									<Filter />
 								</div>
-								<div className='icon'>
+								<div
+									className='icon'
+									onClick={() => {
+										setFilter(!filter);
+									}}
+								>
 									<span>username </span>
 									<Filter />
 								</div>
-								<div className='icon'>
+								<div
+									className='icon'
+									onClick={() => {
+										setFilter(!filter);
+									}}
+								>
 									<span>email </span>
 									<Filter />
 								</div>
-								<div className='icon'>
+								<div
+									className='icon'
+									onClick={() => {
+										setFilter(!filter);
+									}}
+								>
 									<span>phone number </span>
 									<Filter />
 								</div>
-								<div className='icon'>
+								<div
+									className='icon'
+									onClick={() => {
+										setFilter(!filter);
+									}}
+								>
 									<span>date joined </span>
 									<Filter />
 								</div>
-								<div className='icon'>
+								<div
+									className='icon'
+									onClick={() => {
+										setFilter(!filter);
+									}}
+								>
 									<span>status </span>
 									<Filter />
 								</div>
@@ -208,7 +233,9 @@ const UserList = () => {
 											<div className='status'>Inactive</div>
 										</div>
 										<button className='icon' onClick={() => console.log(item)}>
-											<MenuDot />
+											<div className='pop-up'>
+												<MenuDot />
+											</div>
 										</button>
 									</div>
 								))}
