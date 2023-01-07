@@ -125,6 +125,7 @@
     line-height: 14px;
     font-size: 12px;
     font-weight: 600;
+    cursor: pointer;
   }
   .user-list .content .body-section .table .thead .icon span {
     margin-right: 8px;
